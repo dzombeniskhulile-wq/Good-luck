@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Luck❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#001f4d,#003b8e,#0057d9);
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+.card{
+    background:rgba(255,255,255,0.95);
+    width:85%;
+    max-width:750px;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.3);
+}
+
+h1{
+    color:#003b8e;
+    margin-bottom:25px;
+}
+
+.message{
+    color:#333;
+    font-size:22px;
+    line-height:1.8;
+}
+
+.signature{
+    margin-top:35px;
+    font-size:34px;
+    color:#003b8e;
+    font-family:cursive;
+    font-weight:bold;
+}
+
+.heart{
+    position:absolute;
+    font-size:25px;
+    opacity:0.5;
+    animation:float linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>📚 GOOD LUCK ON YOUR EXAMS STHANDWA SAMI❤️</h1>
+
+<div class="message">
+
+Just know that I believe in you, ❤️
+
+<br><br>
+
+Keep pushing, keep praying and keep trusting yourself.
+
+<br><br>
+
+You have worked so hard for this moment and I know you can do it.
+
+<br><br>
+
+Whenever things get difficult, remember how far you've come and how much effort you've put in.
+
+<br><br>
+
+Stay focused.
+
+Stay confident.
+
+Stay positive.
+
+<br><br>
+
+You've got this! 💪✨
+
+</div>
+
+<div class="signature">
+<span id="typing"></span>
+</div>
+
+</div>
+
+<script>
+
+/* WEBSITE EXPIRES AFTER TODAY */
+
+const expiryDate = new Date("2026-10-22T00:00:00");
+
+if(new Date() >= expiryDate){
+
+document.body.innerHTML = `
+
+<div style="
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#001f4d;
+color:white;
+font-family:cursive;
+text-align:center;
+padding:20px;
+font-size:35px;
+">
+
+Uykhiphile lomdzala ❤️
+
+</div>
+
+`;
+
+}
+
+/* TYPING EFFECT */
+
+const text = "Yours in Love, LOMDZALA KAKHULU ❤️";
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,150);
+
+}
+
+}
+
+/* START AFTER MESSAGE IS READ */
+
+setTimeout(typeWriter,5000);
+
+/* FLOATING HEARTS */
+
+for(let j=0; j<30; j++){
+
+let heart = document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(Math.random()*6+5)+"s";
+
+heart.style.fontSize=(Math.random()*15+18)+"px";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
