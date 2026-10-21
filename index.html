@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Good Luck❤️</title>
+
+<title>For You ❤️</title>
 
 <style>
 
@@ -14,65 +16,91 @@
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     background:linear-gradient(135deg,#001f4d,#003b8e,#0057d9);
-    font-family:Arial, sans-serif;
-    overflow:hidden;
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
+    padding:15px;
 }
 
 .card{
-    background:rgba(255,255,255,0.95);
-    width:85%;
-    max-width:750px;
-    padding:40px;
+    background:rgba(255,255,255,0.96);
+    width:95%;
+    max-width:700px;
+    padding:25px;
     border-radius:25px;
     text-align:center;
     box-shadow:0 0 30px rgba(0,0,0,0.3);
+    z-index:2;
 }
 
 h1{
     color:#003b8e;
-    margin-bottom:25px;
+    margin-bottom:20px;
+    font-size:32px;
 }
 
 .message{
     color:#333;
-    font-size:22px;
+    font-size:20px;
     line-height:1.8;
 }
 
 .signature{
-    margin-top:35px;
-    font-size:34px;
+    margin-top:30px;
     color:#003b8e;
+    font-size:32px;
     font-family:cursive;
     font-weight:bold;
 }
 
 .heart{
     position:absolute;
-    font-size:25px;
-    opacity:0.5;
+    opacity:0.4;
     animation:float linear infinite;
+    pointer-events:none;
 }
 
 @keyframes float{
+
     from{
         transform:translateY(100vh);
         opacity:0;
     }
 
-    50%{
-        opacity:1;
+    30%{
+        opacity:0.6;
     }
 
     to{
-        transform:translateY(-100px);
+        transform:translateY(-120px);
         opacity:0;
     }
+
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size:24px;
+    }
+
+    .message{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .signature{
+        font-size:24px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
 }
 
 </style>
@@ -82,11 +110,11 @@ h1{
 
 <div class="card">
 
-<h1>📚 GOOD LUCK ON YOUR EXAMS STHANDWA SAMI❤️</h1>
+<h1>📚 GOOD LUCK ON YOUR EXAMS ❤️</h1>
 
 <div class="message">
 
-Just know that I believe in you, ❤️
+Just know that I believe in you. ❤️
 
 <br><br>
 
@@ -98,15 +126,21 @@ You have worked so hard for this moment and I know you can do it.
 
 <br><br>
 
-Whenever things get difficult, remember how far you've come and how much effort you've put in.
+Whenever things get difficult, remember how far you've come and how much effort you've already put in.
 
 <br><br>
+
+Take a deep breath.
 
 Stay focused.
 
 Stay confident.
 
 Stay positive.
+
+<br><br>
+
+No matter what happens, I am proud of you.
 
 <br><br>
 
@@ -122,7 +156,9 @@ You've got this! 💪✨
 
 <script>
 
-/* WEBSITE EXPIRES AFTER TODAY */
+/* ==========================
+   EXPIRE AFTER TODAY
+========================== */
 
 const expiryDate = new Date("2026-10-22T00:00:00");
 
@@ -135,15 +171,15 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:#001f4d;
+background:linear-gradient(135deg,#001f4d,#003b8e);
 color:white;
 font-family:cursive;
+font-size:32px;
 text-align:center;
-padding:20px;
-font-size:35px;
+padding:30px;
 ">
 
-Uykhiphile lomdzala ❤️
+The message has flown away with today's wishes ❤️
 
 </div>
 
@@ -151,9 +187,11 @@ Uykhiphile lomdzala ❤️
 
 }
 
-/* TYPING EFFECT */
+/* ==========================
+   TYPING SIGNATURE
+========================== */
 
-const text = "Yours in Love, LOMDZALA KAKHULU ❤️";
+const text = "Yours In Love, Lomdzala ❤️";
 
 let i = 0;
 
@@ -171,25 +209,27 @@ setTimeout(typeWriter,150);
 
 }
 
-/* START AFTER MESSAGE IS READ */
-
 setTimeout(typeWriter,5000);
 
-/* FLOATING HEARTS */
+/* ==========================
+   FLOATING HEARTS
+========================== */
 
-for(let j=0; j<30; j++){
+for(let j=0; j<40; j++){
 
 let heart = document.createElement("div");
 
-heart.className="heart";
+heart.className = "heart";
 
-heart.innerHTML="❤️";
+heart.innerHTML = "❤️";
 
-heart.style.left=Math.random()*100+"vw";
+heart.style.left = Math.random()*100 + "vw";
 
-heart.style.animationDuration=(Math.random()*6+5)+"s";
+heart.style.fontSize = (Math.random()*20 + 15) + "px";
 
-heart.style.fontSize=(Math.random()*15+18)+"px";
+heart.style.animationDuration = (Math.random()*8 + 6) + "s";
+
+heart.style.animationDelay = (Math.random()*6) + "s";
 
 document.body.appendChild(heart);
 
